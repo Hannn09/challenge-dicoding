@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    padding: 20px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    float: left;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+nav li a:hover {
+    color: #316499;
+    font-weight: bold;
+}
+
+nav li .icon {
+    display: none;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: #316499;
+    padding: 15px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    /* user-select: none; */
+}
+
+
+/* Section Opening */
+#opening {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.description h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.description p {
+    color: #828282;
+    font-size: 20px;
+}
+
+.description button {
+    display: inline-block;
+    cursor: pointer;
+    width: 125px;
+    background: #316499;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.content-img {
+    flex-basis: 70%;
+}
+
+.content-img img {
+    width: 600px;
+    object-fit: cover;
+}
+
+/* Section Service */
+#service {
+    background: rgba(49, 100, 153, 0.1);
+    margin-bottom: 50px;
+    padding: 50px;
+}
+
+#service h2 {
+    font-size: 40px;
+    color: #316499;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.list-service {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    padding: 15px;
+}
+
+.card .content {
+    margin: auto;
+}
+
+.card .content h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.card .content p {
+    font-weight: 400;
+    color: #828282;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card .content a {
+    color: #316499;
+}
+
+.card .icon-service {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #316499;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.card .icon-service img {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+/* Section List */
+#list {
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+#list h2 {
+    font-size: 40px;
+    color: #316499;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#list .content-properties {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-list {
+    width: 250px;
+    height: 280px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.card-list .content-list .image-properties {
+    width: 100%;
+}
+
+.card-list .location-content {
+    display: flex;
+    align-items: center;
+}
+
+.card-list .location-content img {
+    margin-right: 10px;
+}
+
+.card-list .location-content h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-list .feature-list {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-list .feature-list .layout {
+    display: flex;
+}
+
+.card-list .feature-list img {
+    margin-right: 10px;
+}
+
+.card-list .content-list a {
+    display: block;
+    margin-top: 20px;
+    color: #316499;
+}
+
+#list button {
+    width: 150px;
+    border-radius: 60px;
+    padding: 15px;
+    margin-top: 45px;
+    color: #316499;
+    border: 2px solid #316499;
+    background: transparent;
+    cursor: pointer;
+}
+
+#list .button-center {
+    text-align: center;
+}
+
+/* Section Article */
+
+#blog {
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.listBlog {
+    display: flex;
+    justify-content: space-between;
+}
+
+#blog h2 {
+    font-size: 40px;
+    color: #316499;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-blog {
+    background: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    width: 300px;
+    border-radius: 15px;
+    height: 500px;
+}
+
+.card-blog img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-blog .value-content {
+    text-align: start;
+    padding: 20px;
+}
+
+.card-blog .value-content h3 {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.card-blog .value-content h4,
+p {
+    font-weight: 500;
+    color: #828282;
+    margin-bottom: 15px;
+}
+
+.card-blog .value-content a {
+    color: #316499;
+    font-weight: 500;
+}
+
+/* Section Testimonials */
+#testimonials {
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+#testimonials h2 {
+    font-size: 40px;
+    color: #316499;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cards__item {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 300px;
+    text-align: center;
+    background: #F9FAFC;
+    border-radius: 15px;
+    padding: 15px;
+    list-style-type: none;
+    transition: transform .3s ease-out;
+}
+
+.cards__item:not(:first-child) {
+    margin-left: 20px;
+}
+
+.content-teestimonials {
+    margin: auto;
+}
+
+.content-teestimonials h3,
+h4 {
+    font-weight: 500;
+}
+
+.content-teestimonials h4,
+p {
+    color: #828282;
+}
+
+.content-teestimonials img {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.cards__controls {
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cards__controls button {
+    width: 40px;
+    height: 40px;
+}
+
+.cards__controls--prev {
+    margin-right: 10px;
+}
+
+
+
+/* Aside Profile */
+aside {
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.card-profile {
+    position: relative;
+    width: 700px;
+    height: 250px;
+    border-radius: 15px;
+    border: 2px solid #000;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+}
+
+.card-profile:hover {
+    transition: all 2s ease-in;
+    box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.2);
+    top: -8px;
+}
+
+.content-profile {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.content-profile img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.content-profile h4 {
+    font-size: 14px;
+}
+
+.content-profile p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.social-media-profile {
+    display: flex;
+}
+
+/* Footer */
+footer {
+    padding: 25px;
+    background: #316499;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin-top: 20px;
+        background: #316499;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .menu li+li {
+        display: block;
+        margin-top: 12px;
+    }
+
+    .menu li:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .menu li:focus {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    input[type="checkbox"]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #opening {
+        display: block;
+    }
+
+    #opening .content-img img {
+        margin-top: 50px;
+        width: 400px;
+    }
+
+    .list-service,
+    .content-properties,
+    .listBlog,
+    .content-profile {
+        flex-direction: column;
+    }
+
+    .list-service .card,
+    .content-properties .card-list,
+    .listBlog section {
+        margin: 20px auto;
+    }
+
+    .card-profile {
+        margin-top: 40px;
+        width: 300px;
+        height: 550px;
+    }
+
+    .content-profile img {
+        margin: 10px auto;
+    }
+
+    .content-profile .description-profile {
+        text-align: center;
+    }
+
+    .content-profile .social-media-profile {
+        justify-content: space-between;
+
+    }
+}
